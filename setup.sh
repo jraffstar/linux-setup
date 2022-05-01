@@ -29,7 +29,7 @@ then
 	echo "Replacing .config directory"
 	sleep 3s
 	rm -rf .config
-	cp -r ~/linux-setup/config ~/.config
+	cp -r ~/linux-setup/config/ ~/.config
 else
 	echo "Creating .config"
 	sleep 2s
