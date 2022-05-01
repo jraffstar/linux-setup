@@ -33,6 +33,7 @@ then
 else
 	echo "Creating .config"
 	sleep 2s
+	mkdir ~/.config
 	cp -r ~/linux-setup/config/ ~/.config
 fi
 
