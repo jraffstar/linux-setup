@@ -7,6 +7,10 @@ if [ $EUID -ne 0 ]
                 exit 1
 fi
 
+echo "lets start doing the epic install"
+sleep 2s
+
+
 # Installs Fish
 
 echo "installing fish"
@@ -15,6 +19,8 @@ sleep 1s
 pacman -S fish --noconfirm
 git clone https://github.com/jraffstar/linux-setup.git
 sleep 2s
+
+# config stuff
 
 cd ~
 
