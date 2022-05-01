@@ -11,6 +11,7 @@ fi
 
 pacman -S fish --noconfirm
 git clone https://github.com/jraffstar/linux-setup.git
+sleep 2s
 
 cd ~
 
@@ -22,10 +23,12 @@ then
 	cp -r ~/linux-setup/config ~/.config
 else
 	echo "Creating .config"
+	sleep 2s
 	cp -r ~/linux-setup/config/ ~/.config
 fi
 
 echo "Making Fish default shell"
+sleep 2s
 chsh -s /bin/fish
 
 sleep 2s
